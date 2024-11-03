@@ -1,0 +1,30 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon sidebar-content-admin" (click)="collapsed.set(!collapsed())"
+    aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a routerLink="">
+    <img src="assets/img/logo.png" width="70" height="40">
+  </a>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+  <app-menubar />
+
+</mat-toolbar>
+
+
+
+
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened [style.width]="sidenavWidth()">
+    <app-sidebar-content [collapsed]="collapsed()" />
+  </mat-sidenav>
+  <mat-sidenav-content class="content" [style.margin-left]="sidenavWidth()">
+    <router-outlet />
+  </mat-sidenav-content>
+</mat-sidenav-container>

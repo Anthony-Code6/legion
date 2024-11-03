@@ -1,0 +1,38 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.content {
+  padding: 10px;
+}
+
+mat-toolbar {
+  position: relative;
+  z-index: 5;
+  background-color: white;
+}
+
+mat-sidenav-content {
+  height: calc(100vh - 80px);
+}
+
+mat-sidenav,
+mat-sidenav-content {
+  transition: all 500ms ease-in-out;
+}
+
+
+@media screen and (width <=1000px) {
+
+  .sidebar-content-admin {
+    display: none;
+  }
+
+  mat-sidenav {
+    width: 65px !important;
+  }
+
+  mat-sidenav-content {
+    margin-left: 65px !important;
+  }
+}

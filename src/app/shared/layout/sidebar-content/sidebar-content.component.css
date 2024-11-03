@@ -1,0 +1,59 @@
+:host * {
+  transition: all 500ms ease-in-out;
+}
+
+.sidenav-header{
+  padding-top: 24px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sidenav-header img{
+  border-radius: 100%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.header-text{
+  height: 3rem;
+}
+
+.sidenav-header .header-text h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.sidenav-header .header-text p {
+  margin: 3px 0;
+  font-size: 0.8rem;
+}
+
+.hide-header-text{
+  opacity: 0;
+  height: 0px !important;
+}
+
+.menu-item {
+  border-left: 5px solid;
+  border-left-color: rgba(0, 0, 0, 0);
+}
+
+.selected-menu-item {
+  border-left-color: var(--primary-color);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+
+@media screen and (width <= 1000px) {
+  .sidenav-header img{
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-text{
+    opacity: 0;
+    height: 0px !important;
+  }
+
+}
