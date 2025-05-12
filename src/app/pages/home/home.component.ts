@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { YouTubePlayerModule } from '@angular/youtube-player';
 @Component({
     selector: 'app-home',
-    imports: [YouTubePlayerModule],
+    imports: [],
     templateUrl: './home.component.html',
     styleUrl: './home.component.css'
 })
