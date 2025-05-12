@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 @Component({
-  selector: 'app-menubar',
-  standalone: true,
-  imports: [MatIconModule],
-  templateUrl: './menubar.component.html',
-  styleUrl: './menubar.component.css'
+    selector: 'app-menubar',
+    imports: [MatIconModule],
+    templateUrl: './menubar.component.html',
+    styleUrl: './menubar.component.css'
 })
 export class MenubarComponent {
   openMenu() {

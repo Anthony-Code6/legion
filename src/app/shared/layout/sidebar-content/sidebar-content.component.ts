@@ -7,11 +7,10 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { NgOptimizedImage } from '@angular/common';
 
 @Component({
-  selector: 'app-sidebar-content',
-  standalone: true,
-  imports: [MatListModule, MatIconModule, RouterLink, RouterLinkActive,NgOptimizedImage],
-  templateUrl: './sidebar-content.component.html',
-  styleUrl: './sidebar-content.component.css'
+    selector: 'app-sidebar-content',
+    imports: [MatListModule, MatIconModule, RouterLink, RouterLinkActive, NgOptimizedImage],
+    templateUrl: './sidebar-content.component.html',
+    styleUrl: './sidebar-content.component.css'
 })
 export class SidebarContentComponent {
   sideNavCollapsed = signal(false);

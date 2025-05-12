@@ -11,11 +11,10 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MenubarComponent } from '../../components/menubar/menubar.component';
 import { RouterLink } from '@angular/router';
 @Component({
-  selector: 'app-adminheader',
-  standalone: true,
-  imports: [RouterOutlet,MenubarComponent, MatToolbarModule, MatButtonModule, MatMenuModule, MatIconModule, MatSidenavModule, SidebarContentComponent, RouterLink],
-  templateUrl: './adminheader.component.html',
-  styleUrl: './adminheader.component.css'
+    selector: 'app-adminheader',
+    imports: [RouterOutlet, MenubarComponent, MatToolbarModule, MatButtonModule, MatMenuModule, MatIconModule, MatSidenavModule, SidebarContentComponent, RouterLink],
+    templateUrl: './adminheader.component.html',
+    styleUrl: './adminheader.component.css'
 })
 export class AdminheaderComponent {
   collapsed = signal(false);
