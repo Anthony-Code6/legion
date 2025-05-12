@@ -20,7 +20,6 @@
     "@angular/platform-browser": "^19.2.10",
     "@angular/platform-browser-dynamic": "^19.2.10",
     "@angular/router": "^19.2.10",
-    "@angular/youtube-player": "^18.2.14",
     "bootstrap": "^5.3.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

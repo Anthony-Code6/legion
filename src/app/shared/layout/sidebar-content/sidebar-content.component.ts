@@ -8,7 +8,7 @@ import { NgOptimizedImage } from '@angular/common';
 
 @Component({
     selector: 'app-sidebar-content',
-    imports: [MatListModule, MatIconModule, RouterLink, RouterLinkActive, NgOptimizedImage],
+    imports: [MatListModule, MatIconModule, RouterLink, RouterLinkActive],
     templateUrl: './sidebar-content.component.html',
     styleUrl: './sidebar-content.component.css'
 })
