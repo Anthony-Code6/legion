@@ -29,6 +29,16 @@ export class SidebarContentComponent {
       icon: "video_library",
       label: "Content",
       route: "content",
+    },
+    {
+      icon: "dashboard",
+      label: "Input",
+      route: "inputs",
+    },
+    {
+      icon: "video_library",
+      label: "Content",
+      route: "content",
     }
   ])
 

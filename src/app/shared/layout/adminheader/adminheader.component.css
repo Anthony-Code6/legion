@@ -21,6 +21,12 @@ mat-sidenav-content {
   transition: all 500ms ease-in-out;
 }
 
+.logo {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
 
 
 @media screen and (width <=1000px) {

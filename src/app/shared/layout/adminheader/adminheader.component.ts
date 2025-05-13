@@ -8,13 +8,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { SidebarContentComponent } from '../sidebar-content/sidebar-content.component';
 import { MatMenuModule } from '@angular/material/menu';
 
-import { MenubarComponent } from '../../components/menubar/menubar.component';
 import { RouterLink } from '@angular/router';
+import { ImgComponent } from "../../components/img/img.component";
 @Component({
-    selector: 'app-adminheader',
-    imports: [RouterOutlet, MenubarComponent, MatToolbarModule, MatButtonModule, MatMenuModule, MatIconModule, MatSidenavModule, SidebarContentComponent, RouterLink],
-    templateUrl: './adminheader.component.html',
-    styleUrl: './adminheader.component.css'
+  selector: 'app-adminheader',
+  imports: [RouterOutlet, MatToolbarModule, MatButtonModule, MatMenuModule, MatIconModule, MatSidenavModule, SidebarContentComponent, RouterLink, ImgComponent],
+  templateUrl: './adminheader.component.html',
+  styleUrl: './adminheader.component.css'
 })
 export class AdminheaderComponent {
   collapsed = signal(false);

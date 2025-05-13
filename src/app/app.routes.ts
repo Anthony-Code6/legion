@@ -3,6 +3,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { AdminheaderComponent } from './shared/layout/adminheader/adminheader.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ContentComponent } from './pages/content/content.component';
+import { ImputsComponent } from './pages/imputs/imputs.component';
 
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
@@ -11,6 +12,7 @@ export const routes: Routes = [
       {path:'',component:HomeComponent},
       {path:'dashboard',component:DashboardComponent},
       {path:'content',component:ContentComponent},
+      {path:'inputs',component:ImputsComponent},
     ]
   }
 ];
