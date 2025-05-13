@@ -1,0 +1,26 @@
+
+pre {
+   padding: 1rem;
+    margin: 0;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: pre;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+pre::-webkit-scrollbar{
+    display: none;
+}
+
+code {
+    background: var(--background);
+    color: white;
+    display: block;
+    min-width: fit-content;
+    font-family: monospace;
+    font-size: 0.9rem;
+}

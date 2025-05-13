@@ -13,10 +13,9 @@
 mat-toolbar {
     position: relative;
     z-index: 5;
-    background-color: white;
+    background: var(--background);
     height: 50px;
 }
-
 
 mat-sidenav-container {
     height: calc(100vh - 50px);
@@ -26,11 +25,13 @@ mat-sidenav {
     background-color: white;
     border: none !important;
     border-radius: 0;
+    background: var(--background);
 }
 
 mat-sidenav-content {
     height: calc(100vh - 50px);
     scrollbar-width: none;
+    background: var(--background);
 }
 
 
@@ -39,12 +40,20 @@ mat-sidenav-content {
   transition: all 500ms ease-in-out;
 }
 
+.logo-header{
+  overflow: hidden;
+  width: 80px;
+  height: 30px;
+}
+
 .logo {
   overflow: hidden;
   border-radius: 50%;
   width: 35px;
   height: 35px;
 }
+
+
 
 
 @media screen and (width <=1000px) {

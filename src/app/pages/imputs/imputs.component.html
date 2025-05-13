@@ -1,8 +1,22 @@
 <div class="subtitle">
-  <app-subtitle titulo="Input" />
+  <app-subtitle titulo="Inputs" />
 </div>
 <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center" divider-color="primary">
-  <mat-tab label="Input">Input</mat-tab>
-  <mat-tab label="TextArea">TextArea</mat-tab>
-  <mat-tab label="Select">Select</mat-tab>
+  <mat-tab label="Input">
+    <div class="container">
+
+      @for (item of inputs(); track $index) {
+        <div class="historial_input">
+          <app-registros [comandos]="item"/>
+        </div>
+      }
+
+    </div>
+  </mat-tab>
+  <mat-tab label="TextArea">
+    TextArea
+  </mat-tab>
+  <mat-tab label="Select">
+    Select
+  </mat-tab>
 </mat-tab-group>

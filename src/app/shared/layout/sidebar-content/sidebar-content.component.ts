@@ -34,11 +34,6 @@ export class SidebarContentComponent {
       icon: "dashboard",
       label: "Input",
       route: "inputs",
-    },
-    {
-      icon: "video_library",
-      label: "Content",
-      route: "content",
     }
   ])
 

@@ -2,7 +2,7 @@
 @use './app/styles/material.scss';
 
 :root{
-  --background: #1d2d44;
+  --background: #010408;
 }
 
 :host {
@@ -27,4 +27,7 @@ body {
 }
 
 
+mat-icon,.mdc-tab__text-label{
+  color: white !important;
+}
 
