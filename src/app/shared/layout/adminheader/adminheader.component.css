@@ -1,20 +1,38 @@
+*{
+  transition: all 500ms ease-in-out;
+}
+
 .example-spacer {
-  flex: 1 1 auto;
+    flex: 1 1 auto;
 }
 
 .content {
-  padding: 10px;
+    padding: 10px;
 }
 
 mat-toolbar {
-  position: relative;
-  z-index: 5;
-  background-color: white;
+    position: relative;
+    z-index: 5;
+    background-color: white;
+    height: 50px;
+}
+
+
+mat-sidenav-container {
+    height: calc(100vh - 50px);
+}
+
+mat-sidenav {
+    background-color: white;
+    border: none !important;
+    border-radius: 0;
 }
 
 mat-sidenav-content {
-  height: calc(100vh - 65px);
+    height: calc(100vh - 50px);
+    scrollbar-width: none;
 }
+
 
 mat-sidenav,
 mat-sidenav-content {
