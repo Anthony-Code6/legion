@@ -10,6 +10,10 @@
   height: 100vh;
 }
 
+html,body{
+  overflow: auto;
+}
+
 html,
 body,
 app-root {

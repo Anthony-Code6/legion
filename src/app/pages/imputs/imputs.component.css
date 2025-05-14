@@ -1,5 +1,6 @@
 .mat-tab-group {
   margin-bottom: 48px;
+  overflow: hidden;
 }
 .subtitle{
   margin-bottom: 10px;
@@ -8,3 +9,4 @@
 .historial_input{
   margin: 10px 0;
 }
+
