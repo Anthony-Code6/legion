@@ -16,7 +16,7 @@
   <mat-tab label="TextArea">
     <div class="container">
 
-      @for (item of inputs(); track $index) {
+      @for (item of textarea(); track $index) {
       <div class="historial_input">
         <app-registros [comandos]="item" />
       </div>
@@ -27,7 +27,7 @@
   <mat-tab label="Select">
     <div class="container">
 
-      @for (item of inputs(); track $index) {
+      @for (item of select(); track $index) {
       <div class="historial_input">
         <app-registros [comandos]="item" />
       </div>
